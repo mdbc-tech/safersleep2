@@ -1,0 +1,26 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("Contact")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+        <h1>
+            <%block name="pageheader">${page_header or _("Contact")}</%block>
+        </h1>
+        
+            <%block name="pagecontent">
+				
+			<h2>Basis </h2>
+            <p> for basis contact the<a href="https://www.durham.ac.uk/research/institutes-and-centres/durham-infancy-sleep-centre/"> Durham Infancy and Sleep Centre</a></p>
+            <p> <i class="fa fa-phone"> 0191 334 0260</i></p>
+            <p> <i class="fa fa-envelope"></i><a href="mailto:infancy.sleep.centre@durham.ac.uk">The Infancy Sleep Centre</a></p>
+            
+            <hr>
+        <div class="span 6">		
+		<p>For any question regarding the usage of {{ PLATFORM_NAME }}, please get in touch with <a href="mailto:{{ CONTACT_EMAIL }}">{{ CONTACT_EMAIL }}</a>.</%block>
+        </p>
+        </div>
+    </section>
+</main>
