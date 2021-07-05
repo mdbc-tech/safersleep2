@@ -1,0 +1,15 @@
+BAS_WELCOME_MESSAGE: "the online learning platform for the Baby Sleep Info Source"
+BAS_PRIMARY_COLOR: "#61046e" # red
+
+# Footer links are dictionaries with a "title" and "url"
+# To remove all links, write:
+# BAS_FOOTER_NAV_LINKS: []
+# BAS_FOOTER_LEGAL_LINKS: []
+BAS_FOOTER_NAV_LINKS:
+  - title: "About"
+    url: "/about"
+  - title: "Contact"
+    url: "/contact"
+BAS_FOOTER_LEGAL_LINKS:
+    - title: "Terms of service"
+      url: "/tos"
