@@ -27,19 +27,7 @@ from openedx.core.djangolib.markup import HTML, Text
 
       </header>
       
-      % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
-              <div class="course-search">
-                <form method="get" action="/courses">
-                  <label><span class="sr">${_("Search for a course")}</span>
-                    <input class="search-input" name="search_query" type="text" placeholder="${_("Search for a course")}"></input>
-                  </label>
-                  <button class="search-button" type="submit">
-                    <span class="icon fa fa-search" aria-hidden="true"></span><span class="sr">${_("Search")}</span>
-                  </button>
-                </form>
-              </div>
-            % endif
-            <%include file="${courses_list}" />
+     
     </section>
     
 </main>
@@ -84,131 +72,21 @@ from openedx.core.djangolib.markup import HTML, Text
     <br>
    <br>
    <div class="container">
+      <h3> Welcome to Basis Learn – the online learning platform for the Baby Sleep Info Source
+      </h3>
+      <p>We offer introductory and advanced online learning packages for practitioners in
+        Normal Infant Sleep | SIDS and Sleep Safety | Supporting Parents with Infant Sleep
+        </p>
+        <div> All of our courses can be completed at your own speed, allow you to check your learning with multi-choice quizzes, offer a certificate of completion, and can be paid for online.
 
-    <div class="row col-sm ">
-
-    <div class="card" style="width: 18rem;">
-        <img src="/static/gran-openedx-theme/images/syrin.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title"></h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="btn btn-primary btn-lg">Read more</a>
-          <a href="#" class="btn btn-warning btn-lg">Cancel</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="/static/gran-openedx-theme/images/syrin2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title"></h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="card-body">
-            <a href="#" class="btn btn-primary btn-lg">Read more</a>
-            <a href="#" class="btn btn-warning btn-lg">Cancel</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="/static/gran-openedx-theme/images/syrin2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title"></h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="card-body">
-            <a href="#" class="btn btn-primary btn-lg">Read more</a>
-            <a href="#" class="btn btn-warning btn-lg">Cancel</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="/static/gran-openedx-theme/images/syrin.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title"></h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="card-body">
-            <a href="#" class="btn btn-primary btn-lg">Read more</a>
-            <a href="#" class="btn btn-warning btn-lg">Cancel</a>
-        </div>
-      </div>
+          Advanced packages include an interactive discussion session with the Basis Team
+          </div>
       
     </div>
-    </div>
-
+    
     <br>
     <br>
-     <div id="form-container">
-    <div class="container" >
-            <h1>Register</h1>
-        <form class="row g-3">
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail4">
-            </div>
-            <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">Password</label>
-              <input type="password" class="form-control" id="inputPassword4">
-            </div>
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="col-12">
-              <label for="inputAddress2" class="form-label">Address 2</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="col-md-6">
-              <label for="inputCity" class="form-label">City</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="col-md-4">
-              <label for="inputState" class="form-label">State</label>
-              <select id="inputState" class="form-select">
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="col-md-2">
-              <label for="inputZip" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Remember me
-                </label>
-              </div>
-            </div>
-            <br>
-            <div class="col-12">                
-                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                <button type="submit" class="btn btn-warning btn-lg">Cancel</button>
-            </div>
-          </form>
+     
 </div>
 </div>  
                 
