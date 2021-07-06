@@ -10,10 +10,11 @@
 .home > header {
 	background: url('/static/basis2/images/basismain.jpg');
 	background-size: cover;
-	background-position: 100%;
+	background-position: center;
     height: 578px;
 	width: 1630px;
     border-radius: 0%;
+	align-self: center;
 
 	.outer-wrapper {
 		padding-top: 10px;
