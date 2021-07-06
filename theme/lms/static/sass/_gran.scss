@@ -1,10 +1,10 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 .header-global h1.logo img {
-	max-height: 60px;
+	max-height: 100px;
 }
 .global-header .header-logo a .logo {
     float: left;
-    height: 60px;
+    height: 100px;
     
 }
 .home > header {
@@ -15,8 +15,8 @@
     border-radius: 0%;
 
 	.outer-wrapper {
-		padding-top: 70px;
-	    padding-bottom: 70px;
+		padding-top: 20px;
+	    padding-bottom: 20px;
 	}
 	.title {
 		background: transparent;
@@ -24,11 +24,11 @@
 		margin-left: 0;
 
 		> .heading-group h1 {
-			color: rgb(5,5,5);
+			color: rgb(235, 13, 13);
 			text-shadow: none;
 		}
 		> .heading-group p {
-			color: rgb(5,5,5);
+			color: rgb(235, 13, 13);
 		}
 	}
 }
