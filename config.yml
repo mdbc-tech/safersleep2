@@ -1,5 +1,5 @@
-BAS_WELCOME_MESSAGE: "The online learning platform for the Baby Sleep Info Source"
-BAS_PRIMARY_COLOR: "#F02014" # red
+BAS_WELCOME_MESSAGE: "Training for Professionals"
+BAS_PRIMARY_COLOR: "#2BC2BA" # red
 
 # Footer links are dictionaries with a "title" and "url"
 # To remove all links, write:
