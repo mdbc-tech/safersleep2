@@ -1,5 +1,5 @@
 BAS_WELCOME_MESSAGE: "Training for Professionals"
-BAS_PRIMARY_COLOR: "#2BC2BA" # red
+BAS_PRIMARY_COLOR: "#4f95b8" # blue
 
 # Footer links are dictionaries with a "title" and "url"
 # To remove all links, write:
