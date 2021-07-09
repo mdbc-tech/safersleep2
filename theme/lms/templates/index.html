@@ -14,7 +14,7 @@ from openedx.core.djangolib.markup import HTML, Text
         <div class="outer-wrapper align-center">
           <div class="title">
             <div class="heading-group align-center">
-              % if homepage_overlay_html:
+             <!-- % if homepage_overlay_html:
               ${homepage_overlay_html | n, decode.utf8}
             % else:
               <%include file="index_overlay.html" />
@@ -31,7 +31,7 @@ from openedx.core.djangolib.markup import HTML, Text
                 </form>
               </div>
             % endif
-                    
+              -->      
             </div>
             
            </div>
@@ -44,7 +44,7 @@ from openedx.core.djangolib.markup import HTML, Text
     
 </main>
 
-% if show_homepage_promo_video:
+<!-- % if show_homepage_promo_video:
   <section id="video-modal" class="modal home-page-video-modal video-modal">
     <div class="inner-wrapper">
       <iframe title="YouTube Video" width="640" height="360" src="//www.youtube.com/embed/${homepage_promo_video_youtube_id}?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -71,8 +71,8 @@ from openedx.core.djangolib.markup import HTML, Text
 
 
 % endif
-
-<!-- Your Custom Sections -->
+-->
+<!-- YShow courses -->
 
 <!--Create Carousel-->
  <section>
@@ -88,6 +88,11 @@ from openedx.core.djangolib.markup import HTML, Text
         The Scottish Government and NHS Scotland have come together with the following organisations: Parent Club, The Lullaby Trust, Baby Sleep Info Source (Basis) and UNICEF Baby Friendly Initiative to improve messages and take new action to tackle this. Your role is crucial - by talking to families, and supporting them with understanding how to avoid the specific risks for their baby, we can help to reduce the number of babies dying. This training, and the supporting range of new leaflets, have been designed to provide you with the knowledge and understanding to enable you to discuss safer sleep with all families and carer givers, regardless of their circumstances
                   </div>
         </div>
+        
+<div class="container align-center">
+  <%include file="${courses_list}" />
+  
+</div>
        <!-- <div class="container">
 
           <div class="row">
