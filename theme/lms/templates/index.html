@@ -72,7 +72,7 @@ from openedx.core.djangolib.markup import HTML, Text
 
 % endif
 -->
-<!-- YShow courses -->
+<!-- Show courses -->
 
 <!--Create Carousel-->
  <section>
@@ -88,12 +88,8 @@ from openedx.core.djangolib.markup import HTML, Text
         The Scottish Government and NHS Scotland have come together with the following organisations: Parent Club, The Lullaby Trust, Baby Sleep Info Source (Basis) and UNICEF Baby Friendly Initiative to improve messages and take new action to tackle this. Your role is crucial - by talking to families, and supporting them with understanding how to avoid the specific risks for their baby, we can help to reduce the number of babies dying. This training, and the supporting range of new leaflets, have been designed to provide you with the knowledge and understanding to enable you to discuss safer sleep with all families and carer givers, regardless of their circumstances
                   </div>
         </div>
-        
-<div class="container align-center">
-  <%include file="${courses_list}" />
-  
-</div>
-       <!-- <div class="container">
+      
+    <!-- <div class="container">
 
           <div class="row">
           <title> Brought to you by:</title>
@@ -169,7 +165,9 @@ from openedx.core.djangolib.markup import HTML, Text
     </div>     
 </div>
 </div> 
+<%include file="${courses_list}"/>        
 </section>
+
  <!-- Slider -->
  <!-- <section>
 // <div class="container">
